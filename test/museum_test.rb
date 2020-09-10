@@ -118,6 +118,6 @@ class ExhibitTest < Minitest::Test
   dmns.admit(patron_2)
   dmns.admit(patron_3)
 
-  assert_equal [patron_1, patron_3], dmns.ticket_lottery_conetstants(dead_sea_scrolls)
+  assert_equal [patron_1, patron_3], dmns.ticket_lottery_contestants(dead_sea_scrolls)
   end
 end
