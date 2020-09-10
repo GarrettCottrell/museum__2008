@@ -41,4 +41,13 @@ class ExhibitTest < Minitest::Test
     assert_equal ["Dead Sea Scrolls", "Gems and Minerals"], dmns.recommend_exhibits(patron_1)
     assert_equal ["IMAX"], dmns.recommend_exhibits(patron_2)
   end
+
+  def test_patrons_exist
+
+    dmns = Museum.new("Denver Museum of Nature and Science")
+
+    assert_equal [], dmns.patrons
+
+
+  end
 end
